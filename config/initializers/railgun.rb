@@ -1,0 +1,1 @@
+Railgun.register_module RailgunDevise

@@ -1,5 +1,5 @@
-RailgunDevise::Engine.routes.draw do
+Railgun::Engine.routes.draw do
 	
-	  devise_for :admins
+	devise_for :admins if RailgunDevise.installed?
 
 end
