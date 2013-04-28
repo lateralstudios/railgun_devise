@@ -1,3 +1,5 @@
+require 'devise'
+
 require "railgun_devise/application"
 require "railgun_devise/configuration"
 require "railgun_devise/engine"

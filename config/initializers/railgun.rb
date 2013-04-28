@@ -1,1 +1,3 @@
-Railgun.register_module RailgunDevise
+Railgun.register_module RailgunDevise do
+	
+end

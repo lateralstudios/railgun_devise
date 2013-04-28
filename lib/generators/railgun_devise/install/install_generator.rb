@@ -19,7 +19,6 @@ module RailgunDevise
     end
 
     def copy_files
-			copy_file "initializers/devise.rb", "config/initializers/devise.rb"
 			copy_file "locales/devise.en.yml", "config/locales/devise.en.yml"
 		end
 

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<!-- start: Meta -->
+	<meta charset="utf-8">
+	<title>Optimus Dashboard</title>
+	<meta name="description" content="Optimus Dashboard Bootstrap Admin Template.">
+	<meta name="author" content="Łukasz Holeczek">
+	<!-- end: Meta -->
+	
+	<!-- start: Mobile Specific -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- end: Mobile Specific -->
+	
+	<%= stylesheet_link_tag "railgun/application" %>
+	<% Railgun.config.register_stylesheets.each do |stylesheet| %>
+	<%= stylesheet_link_tag stylesheet %>
+	<% end %>
+
+	<!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- start: Favicon -->
+	<link rel="shortcut icon" href="/assets/railgun/optimus/favicon.ico">
+	<!-- end: Favicon -->
+		
+</head>
+
+<body class="<%= railgun_controller+" "+params[:action] %>">
+	
+	<div class="container-fluid">
+		<div class="row-fluid">
+					
+			<div class="row-fluid">
+				<div class="login-box">
+					<div class="icons">
+						<a href="index.html"><i class="icon-home"></i></a>
+						<a href="#"><i class="icon-cog"></i></a>
+					</div>
+					
+					<%= yield %>
+					
+				</div><!--/span-->
+			</div><!--/row-->
+			
+				</div><!--/fluid-row-->
+				
+	</div><!--/.fluid-container-->
+
+	<%= javascript_include_tag "railgun/application" %>
+	<% Railgun.config.register_javascripts.each do |javascript| %>
+	<%= javascript_include_tag javascript %>
+	<% end %>
+	
+</body>
+</html>
