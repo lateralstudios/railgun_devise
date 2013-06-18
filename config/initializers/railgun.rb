@@ -1,3 +1,5 @@
-Railgun.register_module RailgunDevise do
+Railgun.register_module RailgunDevise do |railgun|
+	
+	
 	
 end
