@@ -4,7 +4,7 @@ module Railgun
   	before_filter :load_interface
     
     def load_interface
-    	Railgun.interface.add_menu_button(:admin, "logout", destroy_admin_session_path, {:method => :delete})
+    		add_menu_button(:admin, "logout", destroy_admin_session_path, {:method => :delete})
     end
     
   end
