@@ -6,7 +6,6 @@ module RailgunDevise
       Dir.glob(File.join(File.dirname(__FILE__), '../../app/**/*_decorator.rb')) do |c|
         rails_load(c)
       end
-      rails_load(File.join(File.dirname(__FILE__), '../../app/controllers/railgun/admins_controller.rb'))
     end
 
     config.to_prepare &method(:activate).to_proc
