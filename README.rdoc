@@ -1,3 +1,12 @@
-= RailgunDevise
+# railgun_devise
 
-This project rocks and uses MIT-LICENSE.
+## Set-up
+
+Add railgun_devise to your Gemfile
+
+    gem 'railgun_devise', :git => 'git@github.com:tombeynon/railgun_devise.git', :branch => :master
+
+Run the generator and migrations
+
+    rails g railgun_devise:install
+    rake db:migrate
