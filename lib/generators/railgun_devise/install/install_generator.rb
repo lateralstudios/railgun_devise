@@ -18,13 +18,9 @@ module RailgunDevise
       @prev_migration_nr.to_s
     end
 
-    def copy_files
-			copy_file "locales/devise.en.yml", "config/locales/devise.en.yml"
-		end
-
-		def copy_migrations
-			migration_template 'migrations/devise_create_admins.rb', 'db/migrate/devise_create_admins.rb'
-		end
+    def run_devise_generator
+      generate "devise:install"
+    end
 
 	end
 end
